@@ -1,0 +1,5 @@
+- @bucketlists.each do |bucketlist|
+	%h2= link_to bucketlist.title, bucketlist
+	%p= bucketlist.description
+
+= link_to "New bucketlist", new_bucketlist_path

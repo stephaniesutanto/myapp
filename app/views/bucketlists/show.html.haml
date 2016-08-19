@@ -1,0 +1,7 @@
+%h1= @bucketlist.title
+%p= @bucketlist.description
+%p= @bucketlist.url
+
+= link_to "Home", root_path
+= link_to "Edit", edit_bucketlist_path(@bucketlist)
+= link_to "Delete", bucketlist_path(@bucketlist), method: :delete, data: { confirm: "Are you sure?" }
